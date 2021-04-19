@@ -15,7 +15,7 @@ export default function ThemeSwitch({ toggled, onClick }) {
   }
 
   return (
-    <div onClick={handleClick}>
+    <div onClick={handleClick} className="header_theme_switch">
 
     <div onClick={onClick} className={`toggle${toggled ? " night" : ""}`}>
       <div className="notch">

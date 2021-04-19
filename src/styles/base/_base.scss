@@ -6,11 +6,22 @@ html,
 body {
   height: 100vh;
   width: 100vw;
-  background-image: url(./../../images/background-image.jpg);
   background-repeat: no-repeat;
+  // background-image: url(./../../images/background-image.jpg);
 }
 
+.link{
+  text-decoration: none;
+  color: $orange;
+  transition: 2s ease;
+  
+  
+  &:hover{
+    color:$light_text;
+  }
+}
 
 .pointer {
   cursor: pointer;
+  letter-spacing: 1px;
 }

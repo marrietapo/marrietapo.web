@@ -9,10 +9,10 @@ const LanguageOptions = () => {
     }
 
     return (
-        <div onClick= {handlerClick}>
-            {english ? 'español' : 'english'}
-        </div>
-    )
+      <div className="header_lang_options pointer" onClick={handlerClick}>
+        {english ? "español" : "english"}
+      </div>
+    );
 }
 
 export default LanguageOptions;

@@ -3,10 +3,10 @@ import SocialMediaIcons from "./SocialMediaIcons";
 
 const Navbar = () => {
     return (
-        <div>
-            <SocialMediaIcons/>
-        </div>
-    )
+      <aside className="navbar">
+        <SocialMediaIcons />
+      </aside>
+    );
 }
 
 export default Navbar;

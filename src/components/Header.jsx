@@ -13,9 +13,9 @@ const Header = () => {
 
 
     return (
-      <div>
-        <ThemeSwitch toggled={toggled} onClick={handleClick} />
+      <div className="header">
         <LanguageOptions />
+        <ThemeSwitch toggled={toggled} onClick={handleClick} />
       </div>
     );
 }

@@ -1,7 +1,133 @@
-.main{
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba($color: #F1F1F1, $alpha: 0.95);
-    
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: $dark_background;
+  background-image: url(./../../images/background-image.jpg);
+  background-size: cover;
+  background-blend-mode: hue;
+  color: lightgrey;
+  position: fixed;
+}
+
+.header {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 15%;
+}
+
+.header_theme_switch {
+  margin-top: 0px;
+}
+
+.header_lang_options {
+  width: 50px;
+  margin-left: 75%;
+  margin-right: 30px;
+  color: $orange;
+}
+
+.container {
+//   background-color: green;
+  display: flex;
+  height: 75%;
+  width: 100%;
+}
+
+.navbar {
+  display: block;
+  //background-color: chocolate;
+  align-items: center;
+  align-self: center;
+  height: auto;
+  width: 100%;
+    padding: auto;
+}
+
+.body {
+//   background-color: black;
+}
+
+.body_title {
+  display: block;
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: bold;
+  letter-spacing: 1px;
+  font-stretch: ultra-expanded;
+  font-family: "Thasadith", sans-serif;
+  & i {
+    font-size: 28px;
+    margin-right: 20px;
+  }
+  .body_title_point{
+    color:$orange;
+  }
+}
+
+.body_paragraph {
+  font-size: 20px;
+  width: 65%;
+  letter-spacing: 1px;
+  font-size: bold;
+  margin-bottom: 20px;
+}
+
+.body_paragraph i {
+  color: $orange;
+  font-size: 16px;
+}
+
+.body_paragraph_p {
+}
+
+.body_paragraph_span {
+  color: $orange;
+}
+
+
+
+.media_icon {
+  width: 35px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  transition: color 0.2s ease;
+  &:hover {
+    color: $orange;
+  }
+}
+
+.media_icon:hover .overlay{
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.overlay{
+  height: 20px;
+  text-align: left;
+  margin-left: 10px;
+  position:absolute;
+  width: 60px;
+  letter-spacing: 1px;
+  padding: 5px;
+  cursor:pointer;
+  opacity:0;
+  transform: translateX(-30%);
+  transition: all 400ms;
+}
+
+.footer {
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 10px;
+  height: 15%;
+}
+
+.social_media_icons {
+  display: flex;
+  flex-direction: column;
 }
