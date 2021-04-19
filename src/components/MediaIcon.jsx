@@ -5,7 +5,7 @@ const MediaIcon = (props) => {
 
   return (
     <div className="media_icon">
-      <i className={item.class}></i>
+      <i className={item.icon} onClick={()=>window.open(item.link)}></i>
       <span className="overlay">{item.text}</span>
     </div>
   );

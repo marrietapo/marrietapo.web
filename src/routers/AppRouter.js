@@ -5,7 +5,7 @@ import Main from "../components/Main";
 const AppRouter = () => {
   return (
     <Router>
-      <div>
+      <div className="">
         <Switch>
           <Route path="/" component={ Main } exact/>
           <Redirect to="/"/>

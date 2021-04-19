@@ -1,16 +1,21 @@
-import React, {useState}from 'react';
+import React from 'react';
+import { LanguageContext } from "./../context/LanguageProvider";
 
 const LanguageOptions = () => {
 
-    const [english, setEnglish] = useState(false);
+    const {language, setLanguage} = React.useContext(LanguageContext);
 
     const handlerClick = () =>{
-        setEnglish(!english);
+      if(language ==="english"){
+        setLanguage("español");
+      }else{
+        setLanguage("english");
+      }
     }
 
     return (
       <div className="header_lang_options pointer" onClick={handlerClick}>
-        {english ? "español" : "english"}
+        {language}
       </div>
     );
 }
