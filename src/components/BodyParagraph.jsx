@@ -5,12 +5,11 @@ const BodyParagraph = () => {
   const { language } = React.useContext(LanguageContext);
 
   const engPart1 =
-    " It's nice to see you here! I take this opportunity to tell you that I try to pay my bills developing software, alone or with friends, on my own or someone else's projects, but always with intensity and the premise of learning and discovering in the process.";
+    " It’s a pleasure to have you here! My name is Mauro, and I’m a software developer based in Montevideo, Uruguay. I’m passionate about building functional software solutions and truly enjoy using technology to tackle complex problems. Being a developer allows me to work in a field I love and pay the bills — a true win-win!";
   const engCV = "resume";
-  const engPart2 = "If you are interested, I leave my";
+  const engPart2 = "If you’d like to learn more about my background and experience, feel free to check out my";
   const engPart3 =
-    " available, although sometimes it may not be up to date, I try to gather relevant information about my training and professional profile there. Finally, if you wish, you can snoop and contact me on the social networks that are available on this site.";
-
+    " it’s available right here for you to explore. Thanks for taking the time to get to know me a little better! Lastly, if you’re curious, feel free to snoop around and connect with me through the social links on the left side of this site.";
 
   const espPart1 =
     " Es un gusto verte por aquí! Aprovecho la instancia para contarte que me gusta la música y procuro pagar mis cuentas " +
